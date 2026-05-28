@@ -19,6 +19,8 @@
 
     <h1 class="my-4 px-3">Feed de productos</h1>
 
+    <div id="topProduct" class="container"></div>
+
     <main class="container my-2 py-3 flex-grow-1">
 
         <div class="row g-4 align-items-start">
@@ -47,20 +49,19 @@
                 <!-- Título + badge de estado -->
                 <div class="d-flex align-items-start justify-content-between gap-3 mb-2">
                     <h3 id="prodTitle" class="mb-0">Kit de cuidado personal</h3>
-                    <button id="statusBtn" type="button" class="btn btn-success flex-shrink-0">Disponible</button>
+                    <button id="statusBadge" type="button" class="btn btn-success flex-shrink-0">Disponible</button>
                 </div>
 
                 <!-- Precio -->
                 <p class="fs-4 fw-bold mb-3">$ 99.99</p>
 
                 <!-- Descripción corta -->
-                <p class="text-start mb-3">
+                <div id="description" class="text-start mb-3">
                     Kit básico para el cuidado de la piel. Uso diario.
-                </p>
+                </div>
 
                 <!-- Mostrar más -->
-                <button id="fullDescription" type="button" class="btn btn-outline-secondary mb-4" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
+                <button id="showDescription" type="button" class="btn btn-outline-secondary mb-4">
                     Mostrar más...
                 </button>
 
